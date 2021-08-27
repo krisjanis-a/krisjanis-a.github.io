@@ -14,15 +14,16 @@
   </head>
   <body>
     <header>
-      <div class="header_content">
-        <div class="logo_container">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 312">
-            <path
-              id="logo_path"
-              fill="white"
-              stroke="white"
-              stroke-width="1"
-              d="M 52.00,112.00
+      <div class="header_container">
+        <div class="header_content">
+          <div class="logo_container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 312">
+              <path
+                id="logo_path"
+                fill="white"
+                stroke="white"
+                stroke-width="1"
+                d="M 52.00,112.00
                             C 52.00,112.00 128.00,20.00 128.00,20.00
                                 128.00,20.00 136.00,20.00 136.00,20.00
                                 136.00,20.00 56.00,116.00 56.00,116.00
@@ -52,54 +53,83 @@
                                 97.33,191.16 70.00,286.00 70.00,286.00
                                 70.00,286.00 78.00,286.00 78.00,286.00
                                 78.00,286.00 102.94,198.12 102.94,198.12 Z"
-            />
-          </svg>
+              />
+            </svg>
+          </div>
+
+          <button class="nav-button">
+            <div class="nav-button_lines_container">
+              <div class="nav-button_line" id="line-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 5">
+                  <path
+                    class="nav-button_line_path"
+                    d="M 0 0 L 50 0 L 50 5 L 0 5 L 0 0"
+                  />
+                </svg>
+              </div>
+
+              <div class="nav-button_line" id="line-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 5">
+                  <path
+                    class="nav-button_line_path"
+                    d="M 0 0 L 50 0 L 50 5 L 0 5 L 0 0"
+                  />
+                </svg>
+              </div>
+
+              <div class="nav-button_line" id="line-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 5">
+                  <path
+                    class="nav-button_line_path"
+                    d="M 0 0 L 50 0 L 50 5 L 0 5 L 0 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
         </div>
 
-        <button class="nav-button">
-          <div class="nav-button_lines_container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 5">
-              <path
-                class="nav-button_line"
-                id="line-1"
-                d="M 0 0 L 50 0 L 50 5 L 0 5 L 0 0"
-              />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 5">
-              <path
-                class="nav-button_line"
-                id="line-2"
-                d="M 0 0 L 50 0 L 50 5 L 0 5 L 0 0"
-              />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 5">
-              <path
-                class="nav-button_line"
-                id="line-3"
-                d="M 0 0 L 50 0 L 50 5 L 0 5 L 0 0"
-              />
-            </svg>
-          </div>
-        </button>
-
-        <nav class="nav-menu">
-          <div class="nav_list">
+        <div class="nav_list">
+          <div class="nav_list_item_container">
             <div class="nav_list_item">
-              <a href="#about"><h2>About me</h2></a>
-            </div>
-            <div class="nav_list_item">
-              <a href="#works"><h2>Works</h2></a>
-            </div>
-
-            <div class="nav_list_item">
-              <a href="#skills"><h2>Skills</h2></a>
-            </div>
-
-            <div class="nav_list_item">
-              <a href="#contacts"><h2>Contacts</h2></a>
+              <a class="nav_list_item_link" href="#about">
+                <div class="nav_list_item_line"></div>
+                <h2>About me</h2>
+                <div class="nav_list_item_line"></div
+              ></a>
             </div>
           </div>
-        </nav>
+
+          <div class="nav_list_item_container">
+            <div class="nav_list_item">
+              <a class="nav_list_item_link" href="#works">
+                <div class="nav_list_item_line"></div>
+                <h2>Works</h2>
+                <div class="nav_list_item_line"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav_list_item_container">
+            <div class="nav_list_item">
+              <a class="nav_list_item_link" href="#skills">
+                <div class="nav_list_item_line"></div>
+                <h2>Skills</h2>
+                <div class="nav_list_item_line"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav_list_item_container">
+            <div class="nav_list_item">
+              <a class="nav_list_item_link" href="#contacts">
+                <div class="nav_list_item_line"></div>
+                <h2>Contacts</h2>
+                <div class="nav_list_item_line"></div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -113,6 +143,9 @@
         <div class="main_container">
           <div class="content_container">
             <div class="text-info_container">
+              <div class="hook_container">
+                <div id="hook"></div>
+              </div>
               <h2>About me</h2>
               <p>
                 My name is Krisjanis. I am a front-end web developer and an
@@ -123,13 +156,12 @@
                 way of learning new things is by adding my own touch to ideas
                 that I find interesting.
               </p>
-              <!-- <div class="profile_image">
-                                <img src="" alt="">
-                            </div> -->
+              <div class="profile_image">
+                <img src="pic_v3.png" />
+              </div>
               <div class="text-info_frame"></div>
               <div class="square-box"></div>
             </div>
-            <!-- <div class="square-box"></div> -->
           </div>
           <div class="line_bottom"></div>
           <div class="line_right"></div>
@@ -146,9 +178,83 @@
           </div>
 
           <div class="project_item_container">
-            <div class="project_item item-1"></div>
-            <div class="project_item item-2"></div>
-            <div class="project_item item-3"></div>
+            <!-- ITEM 1 -->
+            <div class="project_item item-1">
+              <div class="project_item_image_container">
+                <img
+                  src="lyft_site_screenshot.PNG"
+                  alt="Lyft website replica image"
+                />
+              </div>
+
+              <div class="project_info_container">
+                <div class="project_info_heading">
+                  <i class="fas fa-arrow-circle-right"></i>
+                  <a
+                    href="https://krisjanis-a.github.io/Lyft-Cover-Site/"
+                    target="_blank"
+                    ><h3>Lyft Website Replica</h3></a
+                  >
+                </div>
+                <p>
+                  Replicated
+                  <a href="https://www.lyft.com" target="_blank">lyft.com</a>
+                  website front end design using HTML, CSS and Javascript
+                </p>
+              </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="project_item item-2">
+              <div class="project_item_image_container">
+                <img
+                  src="tictactoe_screenshot.PNG"
+                  alt="React TicTacToe image"
+                />
+              </div>
+
+              <div class="project_info_container">
+                <div class="project_info_heading">
+                  <a
+                    href="https://krisjanis-a.github.io/first-react-app/"
+                    target="_blank"
+                    ><i class="fas fa-arrow-circle-right"></i>
+                    <h3>React TicTacToe App</h3></a
+                  >
+                </div>
+                <p>
+                  Built TicTacToe app using ReactJS following
+                  <a
+                    href="https://reactjs.org/tutorial/tutorial.html"
+                    target="_blank"
+                    >tutorial</a
+                  >
+                  and accomplishing additional tasks
+                </p>
+              </div>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="project_item item-3">
+              <div class="project_item_image_container">
+                <img
+                  src="react-site_screenshot.PNG"
+                  alt="ReactJS website image"
+                />
+              </div>
+
+              <div class="project_info_container">
+                <div class="project_info_heading">
+                  <a
+                    href="https://krisjanis-a.github.io/first-react-website-from-tutorial/#/"
+                    target="_blank"
+                    ><i class="fas fa-arrow-circle-right"></i>
+
+                    <h3>ReactJS Website</h3></a
+                  >
+                </div>
+                <p>Created website using ReactJS</p>
+              </div>
+            </div>
           </div>
 
           <div class="line_bottom"></div>
@@ -365,6 +471,8 @@
 
   <script src="header-hide.js"></script>
   <script src="nav-menu.js"></script>
+  <script src="navButtonLines.js"></script>
   <script src="pageLoadResize.js"></script>
   <script src="log_viewport_size.js"></script>
+  <script src="show_profile_image.js"></script>
 </html>
