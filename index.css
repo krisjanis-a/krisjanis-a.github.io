@@ -273,12 +273,6 @@ header.hide {
   position: absolute;
   top: 50%;
   transform: rotate(45deg);
-  animation: line1Activate 1s;
-}
-
-@keyframes line1Activate {
-  0% {
-  }
 }
 
 #line-2.active-line {
@@ -350,8 +344,10 @@ section {
   display: flex;
   align-items: flex-end;
   min-height: fit-content;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  /* padding-top: 10%;
+  padding-bottom: 10%; */
 }
 
 .main_container {
@@ -736,7 +732,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10%;
+  /* padding-top: 10%; */
   padding-bottom: 10%;
   min-height: fit-content;
 }
