@@ -22,7 +22,7 @@ html {
 
 body {
   position: relative;
-  top: -6rem;
+  /* top: -6rem; */
   width: 100%;
   /* width: 100vw; */
   /* overflow-x: hidden; */

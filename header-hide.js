@@ -3,7 +3,7 @@ const header = document.querySelector("header");
 
 let currentScroll = (prevScroll = window.scrollY || doc.scrollTop);
 let currentDirection = (prevDirection = 0);
-let treshold = 100;
+let treshold = 96;
 let toggled;
 
 function checkScroll() {
