@@ -1025,6 +1025,10 @@ footer .logo_container {
 }
 
 @media screen and (max-width: 400px) {
+  .text-info_container p {
+    width: 100%;
+  }
+
   .square-box {
     display: none;
   }
