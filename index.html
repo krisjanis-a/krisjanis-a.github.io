@@ -320,6 +320,7 @@
             <div class="form_container">
               <h3>Send me an email</h3>
               <form
+                action="POST"
                 class="form"
                 name="contact"
                 method="POST"
@@ -340,6 +341,9 @@
                     >Message: <br /><textarea name="message"></textarea>
                   </label>
                 </p>
+                <div class="field">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
                 <p>
                   <button type="submit">Send</button>
                 </p>
