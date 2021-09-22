@@ -1,9 +1,10 @@
 const doc = document.documentElement;
 const header = document.querySelector("header");
+const hideHeaderButton = document.querySelector(".hideHeader");
 
 let currentScroll = (prevScroll = window.scrollY || doc.scrollTop);
 let currentDirection = (prevDirection = 0);
-let treshold = 96;
+let treshold = 10;
 let toggled;
 
 function checkScroll() {
@@ -27,6 +28,13 @@ function checkScroll() {
   }
   prevScroll = currentScroll;
 }
+
+hideHeaderButton.addEventListener("click", () => {
+  header.classList.add("hide");
+  prevScroll = 0;
+  toggleInactive();
+  toggleNavButtonLinesInactive();
+});
 
 function toggleHeader() {
   toggled = true;

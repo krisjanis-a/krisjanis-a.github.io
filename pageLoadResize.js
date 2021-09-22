@@ -7,6 +7,7 @@ let hideHeader;
 
 function pageLoad() {
   changesOnLoadHeader();
+  animateWelcomeTexts();
   // header.style.visibility = "collapse";
   header.style.display = "none";
   hideHeader = true;

@@ -14,6 +14,7 @@
   </head>
   <body>
     <header>
+      <div class="header_background"></div>
       <div class="header_container">
         <div class="header_content">
           <div class="logo_container">
@@ -55,6 +56,10 @@
                                 78.00,286.00 102.94,198.12 102.94,198.12 Z"
               />
             </svg>
+          </div>
+
+          <div class="hideHeader">
+            <i class="fas fa-chevron-up"></i>
           </div>
 
           <button class="nav-button">
@@ -104,7 +109,7 @@
             <div class="nav_list_item">
               <a class="nav_list_item_link" href="#works">
                 <div class="nav_list_item_line"></div>
-                <h2>Works</h2>
+                <h2>Projects</h2>
                 <div class="nav_list_item_line"></div>
               </a>
             </div>
@@ -135,12 +140,15 @@
 
     <main>
       <div class="welcome_section">
-        <h1>Welcome, visitor.</h1>
-        <h3>Please, scroll to view the site.</h3>
+        <div id="welcome_background"></div>
+        <h1 id="welcome_1">Hello, visitor</h1>
+        <h1 id="welcome_2">Welcome to my portfolio website</h1>
+        <h3 id="welcome_3">Please, scroll to continue</h3>
       </div>
 
       <section class="about_section" id="about">
         <div class="main_container">
+          <div id="particles-js"></div>
           <div class="content_container">
             <div class="text-info_container">
               <div class="hook_container">
@@ -165,15 +173,16 @@
           </div>
           <div class="line_bottom"></div>
           <div class="line_right"></div>
-          <div class="small-line_bottom"></div>
-          <div class="small-line_top"></div>
+          <!-- <div class="small-line_bottom"></div> -->
+          <!-- <div class="small-line_top"></div> -->
         </div>
       </section>
 
       <section class="works_section" id="works">
+        <div class="section_background"></div>
         <div class="main_container">
           <div class="title_container">
-            <h2>Works</h2>
+            <h2>Projects</h2>
             <div class="title_underline"></div>
           </div>
 
@@ -311,6 +320,7 @@
       </section>
 
       <section class="contacts_section" id="contacts">
+        <div class="section_background"></div>
         <div class="main_container">
           <div class="title_container">
             <h2>Contacts</h2>
@@ -351,7 +361,7 @@
             </div>
 
             <div class="links_container">
-              <h3>Find out more on:</h3>
+              <h3>Find me on:</h3>
               <div class="links_item" id="linkedin">
                 <a
                   href="https://www.linkedin.com/in/krisjanis-auzins-8a249321a/"
@@ -402,20 +412,20 @@
               </div>
             </div>
           </div>
-          <div class="line_bottom"></div>
-          <div class="line_right"></div>
-          <div class="line_left"></div>
+          <!-- <div class="line_bottom"></div> -->
+          <!-- <div class="line_right"></div> -->
+          <!-- <div class="line_left"></div> -->
         </div>
       </section>
 
-      <section class="other-projects_section" id="other-projects">
+      <!-- <section class="other-projects_section" id="other-projects">
         <div class="main_container">
           <h2>Other projects</h2>
           <div class="content_container"></div>
           <div class="line_bottom"></div>
           <div class="line_right"></div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer>
@@ -462,15 +472,50 @@
         </div>
         <h3>© 2021</h3>
       </div>
-      <div class="line_top"></div>
+      <!-- <div class="line_top"></div> -->
     </footer>
   </body>
 
+  <script src="welcomeTextAnimation.js"></script>
   <script src="hideWelcomeSection.js"></script>
   <script src="header-hide.js"></script>
   <script src="nav-menu.js"></script>
   <script src="navButtonLines.js"></script>
   <script src="pageLoadResize.js"></script>
-  <script src="log_viewport_size.js"></script>
+  <!-- <script src="log_viewport_size.js"></script> -->
   <script src="show_profile_image.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#welcome_background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      points: 8.0,
+      maxDistance: 15.0,
+      spacing: 16.0,
+      showDots: false,
+      // color: "#861e24",
+      color: "#666",
+      backgroundColor: "#181616",
+    });
+  </script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
+  ></script>
+  <script>
+    particlesJS.load(
+      "particles-js",
+      "particles.json"
+      // function () {
+      //   console.log("particles.json loaded...");
+      // }
+    );
+  </script>
 </html>
