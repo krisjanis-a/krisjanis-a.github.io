@@ -6,20 +6,20 @@ let menuActive = false;
 toggleNavMenuButton.addEventListener("click", () => {
   if (menuActive) {
     toggleInactive();
-    toggleNavButtonLines();
+    toggleNavButtonLinesInactive();
     return;
   }
 
   if (!menuActive) {
     toggleActive();
-    toggleNavButtonLines();
+    toggleNavButtonLinesActive();
     return;
   }
 });
 
 navMenu.addEventListener("click", () => {
   toggleInactive();
-  toggleNavButtonLines();
+  toggleNavButtonLinesInactive();
   return;
 });
 

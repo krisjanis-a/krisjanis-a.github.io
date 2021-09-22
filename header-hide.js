@@ -33,6 +33,7 @@ function toggleHeader() {
   if (currentDirection === 2 && currentScroll > treshold) {
     header.classList.add("hide");
     toggleInactive();
+    toggleNavButtonLinesInactive();
   } else if (currentDirection === 1) {
     header.classList.remove("hide");
   } else {
