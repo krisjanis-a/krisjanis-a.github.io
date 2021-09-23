@@ -22,7 +22,6 @@
               <path
                 id="logo_path"
                 fill="white"
-                stroke="white"
                 stroke-width="1"
                 d="M 52.00,112.00
                             C 52.00,112.00 128.00,20.00 128.00,20.00
@@ -58,7 +57,7 @@
             </svg>
           </div>
 
-          <div class="hideHeader">
+          <div class="hideHeader" id="hideHeaderButton">
             <i class="fas fa-chevron-up"></i>
           </div>
 
@@ -99,7 +98,7 @@
             <div class="nav_list_item">
               <a class="nav_list_item_link" href="#about">
                 <div class="nav_list_item_line"></div>
-                <h2>About me</h2>
+                <h4>About me</h4>
                 <div class="nav_list_item_line"></div
               ></a>
             </div>
@@ -109,17 +108,7 @@
             <div class="nav_list_item">
               <a class="nav_list_item_link" href="#works">
                 <div class="nav_list_item_line"></div>
-                <h2>Projects</h2>
-                <div class="nav_list_item_line"></div>
-              </a>
-            </div>
-          </div>
-
-          <div class="nav_list_item_container">
-            <div class="nav_list_item">
-              <a class="nav_list_item_link" href="#skills">
-                <div class="nav_list_item_line"></div>
-                <h2>Skills</h2>
+                <h4>Projects</h4>
                 <div class="nav_list_item_line"></div>
               </a>
             </div>
@@ -129,7 +118,7 @@
             <div class="nav_list_item">
               <a class="nav_list_item_link" href="#contacts">
                 <div class="nav_list_item_line"></div>
-                <h2>Contacts</h2>
+                <h4>Contacts</h4>
                 <div class="nav_list_item_line"></div>
               </a>
             </div>
@@ -143,192 +132,188 @@
         <div id="welcome_background"></div>
         <h1 id="welcome_1">Hello, visitor</h1>
         <h1 id="welcome_2">Welcome to my portfolio website</h1>
-        <h3 id="welcome_3">Please, scroll to continue</h3>
+        <h4 id="welcome_3">Please, scroll to continue</h3>
       </div>
 
       <section class="about_section" id="about">
         <div class="main_container">
-          <div id="particles-js"></div>
-          <div class="content_container">
+          <div class="about_container">
             <div class="text-info_container">
-              <div class="hook_container">
-                <div id="hook"></div>
-              </div>
               <h2>About me</h2>
               <p>
                 My name is Krisjanis. I am a front-end web developer and an
                 aspiring programmer.
               </p>
               <p>
-                I like being inspired by other people's work and my favourite
-                way of learning new things is by adding my own touch to ideas
-                that I find interesting.
+                For many years I wanted to learn programming and a little while
+                ago I decided to pursue this goal. I began studying C# and
+                building console applications but soon realized that I wanted
+                good looking user interfaces for my programms.
               </p>
+              <p>
+                Thus after learning the basics of C# I decided to start studying
+                front-end design and web development. My progress is documented
+                on my GitHub and Codepen pages. In future I plan to delve deeper
+                into software development.
+              </p>
+
+              <div class="resume_link">
+                <a href="">
+                  <i class="fas fa-file"></i>
+                  <h4>My Resume</h4>
+                </a>
+              </div>
+            </div>
+            <div class="picture_container">
+              <div class="hook_container">
+                <div id="hook"></div>
+              </div>
               <div class="profile_image">
                 <img src="pic_v3.png" />
               </div>
-              <div class="text-info_frame"></div>
-              <div class="square-box"></div>
             </div>
           </div>
-          <div class="line_bottom"></div>
-          <div class="line_right"></div>
-          <!-- <div class="small-line_bottom"></div> -->
-          <!-- <div class="small-line_top"></div> -->
+          <div class="tech_container">
+            <h3>Technologies I use:</h3>
+            <div class="tech_icons">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-react"></i>
+              <i class="fab fa-node"></i>
+              <i class="fab fa-github"></i>
+              <i class="fab fa-git-square"></i>
+              <i class="fab fa-figma"></i>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="works_section" id="works">
-        <div class="section_background"></div>
         <div class="main_container">
-          <div class="title_container">
-            <h2>Projects</h2>
-            <div class="title_underline"></div>
-          </div>
+          <h2>Projects</h2>
 
-          <div class="project_item_container">
+          <div class="projects_container">
             <!-- ITEM 1 -->
-            <div class="project_item item-1">
-              <div class="project_item_image_container">
+            <div class="project_item">
+              <div class="project_info">
+                <h3>Lyft Website Replica</h3>
+                <p>
+                  Recreated
+                  <a
+                    href="https://www.lyft.com"
+                    target="_blank"
+                    style="display: inline"
+                    >lyft.com</a
+                  >
+                  website front end design using HTML, CSS and vanilla
+                  Javascript
+                </p>
+
+                <div class="tech_icons_projects">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+
+                <a
+                  href="https://krisjanis-a.github.io/Lyft-Cover-Site/"
+                  target="_blank"
+                  ><i class="fas fa-arrow-circle-right"></i>
+                  <h4>Visit live site</h4></a
+                >
+              </div>
+
+              <div class="project_image">
                 <img
                   src="lyft_site_screenshot.PNG"
                   alt="Lyft website replica image"
                 />
               </div>
-
-              <div class="project_info_container">
-                <div class="project_info_heading">
-                  <i class="fas fa-arrow-circle-right"></i>
-                  <a
-                    href="https://krisjanis-a.github.io/Lyft-Cover-Site/"
-                    target="_blank"
-                    ><h3>Lyft Website Replica</h3></a
-                  >
-                </div>
-                <p>
-                  Replicated
-                  <a href="https://www.lyft.com" target="_blank">lyft.com</a>
-                  website front end design using HTML, CSS and vanilla
-                  Javascript
-                </p>
-              </div>
             </div>
 
             <!-- ITEM 2 -->
-            <div class="project_item item-2">
-              <div class="project_item_image_container">
-                <img src="blog-site_screenshot.PNG" alt="Blog website image" />
-              </div>
-
-              <div class="project_info_container">
-                <div class="project_info_heading">
-                  <a href="https://free-world-blog.netlify.app/" target="_blank"
-                    ><i class="fas fa-arrow-circle-right"></i>
-                    <h3>React Blog Website</h3></a
-                  >
-                </div>
+            <div class="project_item">
+              <div class="project_info">
+                <h3>React Blog Website</h3>
                 <p>
                   Blog website built using MERN stack with CRUD functionality
                 </p>
+
+                <div class="tech_icons_projects">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                  <i class="fab fa-react"></i>
+                  <i class="fab fa-node"></i>
+                </div>
+
+                <a href="https://free-world-blog.netlify.app/" target="_blank"
+                  ><i class="fas fa-arrow-circle-right"></i>
+                  <h4>Visit live site</h4></a
+                >
+              </div>
+              <div class="project_image">
+                <img src="blog-site_screenshot.PNG" alt="Blog website image" />
               </div>
             </div>
+
             <!-- ITEM 3 -->
-            <div class="project_item item-3">
-              <div class="project_item_image_container">
+            <div class="project_item">
+              <div class="project_info">
+                <h3>ReactJS Website</h3>
+                <p>
+                  Custom website created using ReactJS with mobile responsive
+                  design
+                </p>
+
+                <div class="tech_icons_projects">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                  <i class="fab fa-react"></i>
+                  <i class="fab fa-node"></i>
+                </div>
+
+                <a
+                  href="https://krisjanis-a.github.io/first-react-website-from-tutorial/#/"
+                  target="_blank"
+                  ><i class="fas fa-arrow-circle-right"></i>
+
+                  <h4>Visit live site</h4></a
+                >
+              </div>
+              <div class="project_image">
                 <img
                   src="react-site_screenshot.PNG"
                   alt="ReactJS website image"
                 />
               </div>
+            </div>
 
-              <div class="project_info_container">
-                <div class="project_info_heading">
-                  <a
-                    href="https://krisjanis-a.github.io/first-react-website-from-tutorial/#/"
-                    target="_blank"
-                    ><i class="fas fa-arrow-circle-right"></i>
+            <div class="projects_additional_info">
+              <h4>Find my other projects on:</h4>
+              <div class="other_projects_links">
+                <a href="https://github.com/krisjanis-a" target="_blank">
+                  <i class="fab fa-github"></i>
+                  <h4>GitHub</h4>
+                </a>
 
-                    <h3>ReactJS Website</h3></a
-                  >
-                </div>
-                <p>
-                  Custom website created using ReactJS with mobile responsive
-                  design
-                </p>
+                <a href="https://codepen.io/krisjanis-a" target="_blank">
+                  <i class="fab fa-codepen"></i>
+                  <h4>Codepen</h4>
+                </a>
               </div>
             </div>
           </div>
-
-          <div class="line_bottom"></div>
-        </div>
-      </section>
-
-      <section class="skills_section" id="skills">
-        <div class="main_container">
-          <div class="title_container">
-            <h2>Skills</h2>
-            <div class="title_underline"></div>
-          </div>
-          <div class="content_container">
-            <div class="skills_item" id="html5">
-              <div class="icon_container">
-                <i class="fab fa-html5"></i>
-              </div>
-              <h4>HTML 5</h4>
-            </div>
-
-            <div class="skills_item">
-              <div class="icon_container" id="css3">
-                <i class="fab fa-css3-alt"></i>
-              </div>
-              <h4>CSS 3</h4>
-            </div>
-            <div class="skills_item" id="javascript">
-              <div class="icon_container">
-                <i class="fab fa-js"></i>
-              </div>
-              <h4>Javascript</h4>
-            </div>
-            <div class="skills_item" id="figma">
-              <div class="icon_container">
-                <i class="fab fa-figma"></i>
-              </div>
-              <h4>Figma</h4>
-            </div>
-            <div class="skills_item" id="react">
-              <div class="icon_container">
-                <i class="fab fa-react"></i>
-              </div>
-              <h4>React JS</h4>
-            </div>
-            <div class="skills_item" id="github">
-              <div class="icon_container">
-                <i class="fab fa-github"></i>
-              </div>
-              <h4>GitHub</h4>
-            </div>
-            <div class="skills_item" id="git">
-              <div class="icon_container">
-                <i class="fab fa-git-square"></i>
-              </div>
-              <h4>git</h4>
-            </div>
-          </div>
-          <div class="line_bottom"></div>
-          <!-- <div class="line_right"></div> -->
         </div>
       </section>
 
       <section class="contacts_section" id="contacts">
-        <div class="section_background"></div>
         <div class="main_container">
-          <div class="title_container">
-            <h2>Contacts</h2>
-            <div class="title_underline"></div>
-          </div>
-          <div class="content_container">
+          <div class="form_particles">
             <div class="form_container">
-              <h3>Send me an email</h3>
+              <h2>Contact me</h2>
               <form
                 action="POST"
                 class="form"
@@ -359,77 +344,86 @@
                 </p>
               </form>
             </div>
-
-            <div class="links_container">
-              <h3>Find me on:</h3>
-              <div class="links_item" id="linkedin">
-                <a
-                  href="https://www.linkedin.com/in/krisjanis-auzins-8a249321a/"
-                  target="_blank"
-                  ><div class="icon_container">
-                    <i class="fab fa-linkedin"></i>
-                  </div>
-                  <h4>LinkedIn</h4>
-                </a>
-              </div>
-
-              <div class="links_item" id="mygithub">
-                <a href="https://github.com/krisjanis-a" target="_blank"
-                  ><div class="icon_container">
-                    <i class="fab fa-github"></i>
-                  </div>
-                  <h4>GitHub</h4>
-                </a>
-              </div>
-
-              <div class="links_item" id="codepen">
-                <a href="https://codepen.io/krisjanis-a" target="_blank"
-                  ><div class="icon_container">
-                    <i class="fab fa-codepen"></i>
-                  </div>
-                  <h4>Codepen</h4>
-                </a>
-              </div>
-
-              <div class="links_item" id="freecodecamp">
-                <a
-                  href="https://www.freecodecamp.org/krisjanis-a"
-                  target="_blank"
-                  ><div class="icon_container">
-                    <i class="fab fa-free-code-camp"></i>
-                  </div>
-                  <h4>FreeCodeCamp</h4>
-                </a>
-              </div>
-
-              <div class="links_item" id="resume">
-                <a href="">
-                  <div class="icon_container">
-                    <i class="fas fa-file"></i>
-                  </div>
-                  <h4>My Resume</h4>
-                </a>
-              </div>
-            </div>
+            <div id="particles-js"></div>
           </div>
-          <!-- <div class="line_bottom"></div> -->
-          <!-- <div class="line_right"></div> -->
-          <!-- <div class="line_left"></div> -->
         </div>
       </section>
-
-      <!-- <section class="other-projects_section" id="other-projects">
-        <div class="main_container">
-          <h2>Other projects</h2>
-          <div class="content_container"></div>
-          <div class="line_bottom"></div>
-          <div class="line_right"></div>
-        </div>
-      </section> -->
     </main>
 
     <footer>
-      <div class="footer_text">
+      <div class="main_footer">
+        <div class="footer_links_container" id="footer_links_1">
+          <a
+            href="https://www.linkedin.com/in/krisjanis-auzins-8a249321a/"
+            target="_blank"
+            ><div class="icon_container">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </a>
+          <a href="https://github.com/krisjanis-a" target="_blank"
+            ><div class="icon_container">
+              <i class="fab fa-github"></i>
+            </div>
+          </a>
+        </div>
+        <div class="footer_text" id="footer_logo_1">
+          <div class="logo_container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 312">
+              <path
+                id="logo_path"
+                fill="white"
+                stroke="white"
+                stroke-width="1"
+                d="M 52.00,112.00
+                              C 52.00,112.00 128.00,20.00 128.00,20.00
+                                  128.00,20.00 136.00,20.00 136.00,20.00
+                                  136.00,20.00 56.00,116.00 56.00,116.00
+                                  56.00,116.00 136.00,216.00 136.00,216.00
+                                  136.00,216.00 128.00,216.00 128.00,216.00
+                                  128.00,216.00 52.00,120.00 52.00,120.00
+                                  52.00,120.00 52.00,216.00 52.00,216.00
+                                  52.00,216.00 44.00,216.00 44.00,216.00
+                                  44.00,216.00 44.00,20.00 44.00,20.00
+                                  44.00,20.00 52.00,20.00 52.00,20.00
+                                  52.00,20.00 52.00,112.00 52.00,112.00 Z
+                              M 106.58,164.00
+                              C 106.58,164.00 113.09,171.04 113.09,171.04
+                                  113.09,171.04 134.33,96.02 134.33,96.02
+                                  134.33,96.02 137.47,96.02 137.47,96.02
+                                  137.47,96.02 160.00,189.09 160.00,189.09
+                                  160.00,189.09 126.65,189.09 126.65,189.09
+                                  126.65,189.09 132.00,196.00 132.00,196.00
+                                  132.00,196.00 162.00,196.00 162.00,196.00
+                                  162.00,196.00 184.00,286.00 184.00,286.00
+                                  184.00,286.00 192.00,286.00 192.00,286.00
+                                  192.00,286.00 144.00,90.00 144.00,90.00
+                                  144.00,90.00 128.00,90.00 128.00,90.00
+                                  128.00,90.00 106.58,164.00 106.58,164.00 Z
+                              M 102.94,198.12
+                              C 102.94,198.12 97.33,191.16 97.33,191.16
+                                  97.33,191.16 70.00,286.00 70.00,286.00
+                                  70.00,286.00 78.00,286.00 78.00,286.00
+                                  78.00,286.00 102.94,198.12 102.94,198.12 Z"
+              />
+            </svg>
+          </div>
+          <h4>© 2021</h4>
+        </div>
+        <div class="footer_links_container" id="footer_links_2">
+          <a href="https://codepen.io/krisjanis-a" target="_blank"
+            ><div class="icon_container">
+              <i class="fab fa-codepen"></i>
+            </div>
+          </a>
+  
+          <a href="https://www.freecodecamp.org/krisjanis-a" target="_blank"
+            ><div class="icon_container">
+              <i class="fab fa-free-code-camp"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer_text" id="footer_logo_2">
         <div class="logo_container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 312">
             <path
@@ -470,9 +464,8 @@
             />
           </svg>
         </div>
-        <h3>© 2021</h3>
+        <h4>© 2021</h4>
       </div>
-      <!-- <div class="line_top"></div> -->
     </footer>
   </body>
 
@@ -500,9 +493,8 @@
       maxDistance: 15.0,
       spacing: 16.0,
       showDots: false,
-      // color: "#861e24",
-      color: "#666",
-      backgroundColor: "#181616",
+      color: "rgb(30,129,176)",
+      backgroundColor: "rgb(24, 24, 24)",
     });
   </script>
   <script
