@@ -682,6 +682,7 @@ section {
   width: min(45%, 600px);
   padding: 2rem;
   aspect-ratio: 1/1;
+  /* overflow: hidden; */
 }
 
 .project_image img {
