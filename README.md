@@ -1,6 +1,6 @@
 # Personal Portfolio Site
 
-Visit to find out more about me
+Find out more about me
 
 ---
 
