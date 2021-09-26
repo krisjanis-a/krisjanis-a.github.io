@@ -5,16 +5,16 @@ const text3 = document.getElementById("welcome_3");
 function animateWelcomeTexts() {
   setTimeout(() => {
     text1.style.opacity = "0";
-  }, 4000);
+  }, 3000);
   setTimeout(() => {
     text1.style.display = "none";
-  }, 4500);
+  }, 3500);
   setTimeout(() => {
     text2.style.display = "block";
-  }, 4500);
+  }, 3500);
   setTimeout(() => {
     text2.style.opacity = "1";
-  }, 4550);
+  }, 3550);
   setTimeout(() => {
     text3.style.opacity = "1";
   }, 7500);
