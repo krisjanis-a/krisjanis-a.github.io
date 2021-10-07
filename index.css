@@ -573,9 +573,9 @@ section {
   transition: 0.5s background-color ease-out;
 }
 
-#hook:hover {
+/* #hook:hover {
   background-color: var(--custom-color-3);
-}
+} */
 
 .profile_image {
   opacity: 0;
